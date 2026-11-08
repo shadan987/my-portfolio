@@ -1,69 +1,154 @@
-import Image from "next/image";
+const projects = [
+  {
+    name: "luxe-watches",
+    description:
+      "An ecommerce website for luxury watches built with Next.js, React and Tailwind CSS.",
+    tech: ["Next.js", "React", "Tailwind CSS"],
+    live: "https://luxe-watches-nine.vercel.app",
+    github: "https://github.com/shadan987/luxe-watches",
+  },
+];
+
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Next.js",
+  "Tailwind CSS",
+  "Git & GitHub",
+];
+
+const links = {
+  github: "https://github.com/shadan987",
+  linkedin: "https://linkedin.com/in/shadan-saifi-1680b9445",
+  x: "https://x.com/Shadan836",
+  email: "mailto:shadansaifi1368@gmail.com",
+};
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
+    <main className="min-h-screen bg-neutral-950 text-neutral-100">
+      {/* Navbar */}
+      <header className="sticky top-0 z-10 border-b border-neutral-800 bg-neutral-950/80 backdrop-blur">
+        <nav className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
+          <span className="font-semibold">Shadan Saifi</span>
+          <div className="flex gap-6 text-sm text-neutral-400">
+            <a href="#about" className="hover:text-white">About</a>
+            <a href="#projects" className="hover:text-white">Projects</a>
+            <a href="#skills" className="hover:text-white">Skills</a>
+            <a href="#contact" className="hover:text-white">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <div className="mx-auto max-w-4xl px-6">
+        {/* Hero */}
+        <section className="py-24">
+          <p className="mb-3 text-sm text-emerald-400">Hi, I&apos;m</p>
+          <h1 className="text-5xl font-bold tracking-tight sm:text-6xl">
+            Shadan Saifi
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="mt-4 text-xl text-neutral-300">
+            Aspiring Frontend Developer learning Next.js &amp; React.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+          <p className="mt-4 max-w-xl text-neutral-400">
+            I build real projects and share my progress in public.
+          </p>
+          <div className="mt-8 flex gap-4">
+            <a
+              href="#projects"
+              className="rounded-lg bg-emerald-500 px-5 py-2.5 font-medium text-black hover:bg-emerald-400"
+            >
+              View Projects
+            </a>
+            <a
+              href="#contact"
+              className="rounded-lg border border-neutral-700 px-5 py-2.5 hover:border-neutral-500"
+            >
+              Contact
+            </a>
+          </div>
+        </section>
+
+        {/* About */}
+        <section id="about" className="py-16">
+          <h2 className="mb-4 text-2xl font-semibold">About</h2>
+          <p className="max-w-2xl leading-relaxed text-neutral-400">
+            I&apos;m a beginner web developer learning Next.js, React and
+            Tailwind CSS. I learn by building real projects instead of only
+            watching tutorials, and I&apos;m looking for my first internship or
+            junior developer opportunity.
+          </p>
+        </section>
+
+        {/* Projects */}
+        <section id="projects" className="py-16">
+          <h2 className="mb-6 text-2xl font-semibold">Projects</h2>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {projects.map((p) => (
+              <div
+                key={p.name}
+                className="rounded-xl border border-neutral-800 bg-neutral-900 p-6"
+              >
+                <h3 className="text-lg font-semibold">{p.name}</h3>
+                <p className="mt-2 text-sm text-neutral-400">{p.description}</p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {p.tech.map((t) => (
+                    <span
+                      key={t}
+                      className="rounded-full bg-neutral-800 px-3 py-1 text-xs text-neutral-300"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+                <div className="mt-5 flex gap-4 text-sm">
+                  <a href={p.live} className="text-emerald-400 hover:underline">
+                    Live
+                  </a>
+                  <a href={p.github} className="text-emerald-400 hover:underline">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Skills */}
+        <section id="skills" className="py-16">
+          <h2 className="mb-6 text-2xl font-semibold">Skills</h2>
+          <div className="flex flex-wrap gap-3">
+            {skills.map((s) => (
+              <span
+                key={s}
+                className="rounded-lg border border-neutral-800 bg-neutral-900 px-4 py-2 text-sm"
+              >
+                {s}
+              </span>
+            ))}
+          </div>
+        </section>
+
+        {/* Contact */}
+        <section id="contact" className="py-16">
+          <h2 className="mb-4 text-2xl font-semibold">Contact</h2>
+          <p className="mb-6 text-neutral-400">
+            Open to internships and junior roles. Let&apos;s connect!
+          </p>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <a href={links.email} className="text-emerald-400 hover:underline">Email</a>
+            <a href={links.linkedin} className="text-emerald-400 hover:underline">LinkedIn</a>
+            <a href={links.github} className="text-emerald-400 hover:underline">GitHub</a>
+            <a href={links.x} className="text-emerald-400 hover:underline">X</a>
+          </div>
+        </section>
+
+        <footer className="border-t border-neutral-800 py-8 text-sm text-neutral-500">
+          © 2026 Shadan Saifi
+        </footer>
+      </div>
+    </main>
   );
 }
