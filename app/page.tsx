@@ -7,6 +7,14 @@ const projects = [
     live: "https://luxe-watches-nine.vercel.app",
     github: "https://github.com/shadan987/luxe-watches",
   },
+    {
+    name: "luxe-clothes",
+    description:
+      "A multi-page clothing shop website built with HTML, CSS and JavaScript.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    live: "https://luxe-clothes.vercel.app",
+    github: "https://github.com/shadan987/luxe-clothes",
+  },
 ];
 
 const skills = [
