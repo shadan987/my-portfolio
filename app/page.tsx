@@ -15,6 +15,14 @@ const projects = [
     live: "https://luxe-clothes.vercel.app",
     github: "https://github.com/shadan987/luxe-clothes",
   },
+    {
+    name: "study-timer",
+    description:
+      "A focus timer with a filling progress ring, session history, weekly chart, alarms and confetti.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    live: "https://study-timer-six-fawn.vercel.app",
+    github: "https://github.com/shadan987/study-timer",
+  },
 ];
 
 const skills = [
