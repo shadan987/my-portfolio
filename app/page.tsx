@@ -29,6 +29,23 @@ const projects: Project[] = [
     accent: "linear-gradient(135deg,#064e3b 0%,#4c1d95 100%)",
     featured: true,
   },
+    {
+    name: "cardle",
+    emoji: "🃏",
+    description:
+      "A memory card game I built where every level gets harder, with more cards and less time. Matched cards pop away and a level clear ends with confetti.",
+    highlights: [
+      "Levels get harder: more cards, less time",
+      "3 themes with a transparency control",
+      "Installable on phone, Windows and Mac (PWA)",
+    ],
+    tech: ["JavaScript", "HTML", "CSS"],
+    image: "/projects/cardle.png",
+    live: "https://cardle-three.vercel.app",
+    github: "https://github.com/shadan987/cardle",
+    accent: "linear-gradient(135deg,#1e3a8a 0%,#7c3aed 100%)",
+    featured: false,
+  },
   {
     name: "luxe-clothes",
     emoji: "🛍️",
